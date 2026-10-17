@@ -189,11 +189,11 @@ success "Data Volume: $data_volume"
 echo ""
 
 # Prompt user for choice
-PS3='Please enter your choice: '
-options=("Bypass MDM from Recovery" "Reboot & Exit")
+PS3='Lua chon cong cu (chon 1): '
+options=("Bypass MDM bang Recovery" "Reboot & Thoat")
 select opt in "${options[@]}"; do
 	case $opt in
-	"Bypass MDM from Recovery")
+	"Bypass MDM bang Recovery")
 		echo ""
 		echo -e "${YEL}═══════════════════════════════════════${NC}"
 		echo -e "${YEL}  Dang trong qua trinh MDM Bypass      ${NC}"
@@ -234,23 +234,23 @@ select opt in "${options[@]}"; do
 		echo ""
 
 		# Create Temporary User
-		echo -e "${CYAN}Creating Temporary Admin User${NC}"
-		echo -e "${NC}Press Enter to use defaults (recommended)${NC}"
+		echo -e "${CYAN}Dang tao tai khoan Admin${NC}"
+		echo -e "${NC}Nhan Enter de mac dinh tu dong${NC}"
 
 		# Get and validate real name
-		read -p "Enter Temporary Fullname (Default is 'Apple'): " realName
+		read -p "Nhap Fullname hoac bam Enter (Mac dinh la 'Apple'): " realName
 		realName="${realName:=Apple}"
 
 		# Get and validate username
 		while true; do
-			read -p "Enter Temporary Username (Default is 'Apple'): " username
+			read -p "Nhap Username hoac bam Enter (Mac dinh la 'Apple'): " username
 			username="${username:=Apple}"
 
 			if validation_msg=$(validate_username "$username"); then
 				break
 			else
 				warn "$validation_msg"
-				echo -e "${YEL}Please try again or press Ctrl+C to exit${NC}"
+				echo -e "${YEL}Xin thu lai hoac bam Ctrl+C de thoat${NC}"
 			fi
 		done
 
@@ -282,7 +282,7 @@ select opt in "${options[@]}"; do
 
 		# Get and validate password
 		while true; do
-			read -p "Enter Temporary Password (Default is '1234'): " passw
+			read -p "Nhap password hoac bam enter (Mac dinh la '1234'): " passw
 			passw="${passw:=1234}"
 
 			if validation_msg=$(validate_password "$passw"); then
@@ -307,7 +307,7 @@ select opt in "${options[@]}"; do
 		echo ""
 
 		# Create User with error handling
-		info "Creating user account: $username"
+		info "Dang tao user account: $username"
 
 		if ! dscl -f "$dscl_path" localhost -create "/Local/Default/Users/$username" 2>/dev/null; then
 			error_exit "Failed to create user account"
@@ -321,7 +321,7 @@ select opt in "${options[@]}"; do
 		user_home="$data_path/Users/$username"
 		if [ ! -d "$user_home" ]; then
 			if mkdir -p "$user_home" 2>/dev/null; then
-				success "Created user home directory"
+				success "Dang tao user home directory"
 			else
 				error_exit "Failed to create user home directory: $user_home"
 			fi
@@ -339,11 +339,11 @@ select opt in "${options[@]}"; do
 			error_exit "Failed to add user to admin group"
 		fi
 
-		success "User account created successfully"
+		success "User account Tao thanh cong!"
 		echo ""
 
 		# Block MDM domains
-		info "Blocking MDM enrollment domains..."
+		info "Dang blocking MDM enrollment domains..."
 
 		hosts_file="$system_path/etc/hosts"
 		if [ ! -f "$hosts_file" ]; then
@@ -356,11 +356,11 @@ select opt in "${options[@]}"; do
 		grep -q "mdmenrollment.apple.com" "$hosts_file" 2>/dev/null || echo "0.0.0.0 mdmenrollment.apple.com" >>"$hosts_file"
 		grep -q "iprofiles.apple.com" "$hosts_file" 2>/dev/null || echo "0.0.0.0 iprofiles.apple.com" >>"$hosts_file"
 
-		success "MDM domains blocked in hosts file"
+		success "Da blocked host file MDM domains"
 		echo ""
 
 		# Remove configuration profiles
-		info "Configuring MDM bypass settings..."
+		info "Dang chinh sua cai dat MDM bypass ..."
 
 		config_path="$system_path/var/db/ConfigurationProfiles/Settings"
 
@@ -389,10 +389,10 @@ select opt in "${options[@]}"; do
 		echo -e "${GRN}║   MDM Bypass thanh cong, mdm cut ngay :))     ║${NC}"
 		echo -e "${GRN}╚═══════════════════════════════════════════════╝${NC}"
 		echo ""
-		echo -e "${CYAN}Next steps:${NC}"
-		echo -e "  1. Close this terminal window"
-		echo -e "  2. Reboot your Mac"
-		echo -e "  3. Login with username: ${YEL}$username${NC} and password: ${YEL}$passw${NC}"
+		echo -e "${CYAN}Buoc Tiep Theo:${NC}"
+		echo -e "  1. Bam vao goc trai quit terminal"
+		echo -e "  2. Khoi dong lai Macbook"
+		echo -e "  3. Dang nhap va huong thanh qua: ${YEL}$username${NC} and password: ${YEL}$passw${NC}"
 		echo ""
 		break
 		;;
