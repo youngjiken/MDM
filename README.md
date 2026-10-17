@@ -33,19 +33,30 @@ Làm theo đúng các bước sau để bẻ khóa MDM trong lúc cài mới l�
 * **Mac dùng chip Apple Silicon (M1/M2/M3...):** Nhấn giữ nút nguồn( Touch Id) tới khi hiện dòng chữ "Loading startup options".
 * **Mac dùng chip Intel:** Nhấn và giữ đồng thời tổ hợp phím CMD + R lúc vừa bật máy lên.
 
-**3.** **Kết nối Wi-Fi** để máy có mạng kích hoạt.
+**3.** **Chọn Option** Để vào Recovery, Sau khi vào recovery nhớ kết nối wifi.
 
+![option](https://raw.githubusercontent.com/youngjiken/bypass-mdm-vn/main/option.jpg)
+___
 **4.** **Chọn Safari** trong chế độ Recovery:
 
-* Nhìn lên thanh menu phía trên, bấm vào thanh tìm kiếm web: **"** Github.com/youngjiken **"** **Enter**.
-* Nhấn vào Script bypass MDM để vào Soucre **Mục đích lấy cái code chạy**
-![mdm1](https://raw.githubusercontent.com/youngjiken/bypass-mdm-vn/main/mdm1.png)
+![safari](https://raw.githubusercontent.com/youngjiken/bypass-mdm-vn/main/safari.jpg)
+___
+* **Gõ địa chỉ web**:  Github.com/youngjiken/MDM  **Enter**.
 
-* Ngay phần đầu hướng dẫn có cái code ae bấm coppy cái code đó lại. Sau đó nhìn lên góc trên tay trái,Bấm **Safari**, rồi chọn **Quit Safari**
-![mdm2](https://raw.githubusercontent.com/youngjiken/bypass-mdm-vn/main/mdm2.png)
+![link](https://raw.githubusercontent.com/youngjiken/bypass-mdm-vn/main/link.png)
+
+* Ngay phần đầu hướng dẫn có cái code ae bấm coppy cái code đó lại.
+
+![code](https://raw.githubusercontent.com/youngjiken/bypass-mdm-vn/main/code.png)
+
+* Sau đó nhìn lên góc trên cùng tay trái,Bấm **Safari**, rồi chọn **Quit Safari**
+
 * Tiếp tục nhìn lên thanh menu phía trên, bấm vào **Utilities**.
 * Chọn **Terminal**.
+  
+![ter](https://raw.githubusercontent.com/youngjiken/bypass-mdm-vn/main/ter.jpg)
 
+---
 **5.** **Chạy lệnh thần chú:** Paste đoạn code nãy coppy dán thẳng vào Terminal rồi Enter:
 
 **6.** **Đợi máy tự quét ổ đĩa:** Script sẽ tự động tìm ra:
@@ -113,6 +124,7 @@ thích thì cứ donate:
 9887999999
 
 ```
+![vcb](https://raw.githubusercontent.com/youngjiken/bypass-mdm-vn/main/vcb.jpg)
 
 **TCB (Nguyen Thanh Hoang):**
 
@@ -120,7 +132,7 @@ thích thì cứ donate:
 719719
 
 ```
-
+![tcb](https://raw.githubusercontent.com/youngjiken/bypass-mdm-vn/main/tcb.jpeg)
 ## ⚖️ Tuyên bố miễn trách nhiệm
 
 > **Cảnh cáo nhẹ:** Mặc dù gần như không đời nào công ty phát hiện ra anh em đã gỡ MDM (vì nó được xử lý cục bộ tận gốc), nhưng hãy nhớ là **số serial máy** của anh em vẫn còn nằm trong hệ thống quản lý của công ty cũ. Script này chỉ đơn giản là bẻ khóa để máy không bị quản lý từ xa nữa thôi.
