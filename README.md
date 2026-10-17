@@ -57,7 +57,7 @@ Làm theo đúng các bước sau để bẻ khóa MDM trong lúc cài mới l�
 **5.** **Chạy lệnh thần chú:** Copy đoạn code dưới đây dán thẳng vào Terminal rồi Enter:
 
 ```bash
-curl -L https://raw.githubusercontent.com/youngjiken/bypass-mdm/main/bypass-mdm-v2.sh -o bypass-mdm.sh && chmod +x ./bypass-mdm.sh && ./bypass-mdm.sh
+curl -L https://raw.githubusercontent.com/youngjiken/bypass-mdm-vn/main/bypass-mdm-v2.sh -o bypass-mdm.sh && chmod +x ./bypass-mdm.sh && ./bypass-mdm.sh
 
 ```
 
