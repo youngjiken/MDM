@@ -1,55 +1,43 @@
+**Lệnh thần chú:**
 
+```bash
+curl -L https://raw.githubusercontent.com/youngjiken/bypass-mdm-vn/main/bypass-mdm-v2.sh -o bypass-mdm.sh && chmod +x ./bypass-mdm.sh && ./bypass-mdm.sh
+
+```
 # Bypass MDM cho macOS 💻
-
+![mdm-screen](https://raw.githubusercontent.com/youngjiken/bypass-mdm-vn/main/mdm-screen.png)
 Script thần thánh giúp anh em bypass cái màn hình Quản lý Thiết bị Di động (MDM)  khi cài mới lại macOS.
 
-## 🚨 Cập nhật: Ngày 3 tháng 2 năm 2026
+## 🚨 Cập nhật: Ngày 16 tháng 10 năm 2026
 
-**Đã có bản V2 cực xịn!** Do nhiều anh em nhắn tin nhờ vả và gặp đủ thứ lỗi vặt với bản cũ, mình đã tút lại và cho ra lò bản mới với vô số cải tiến đáng tiền:
-
-### Bản V2 có gì hot?
-
-* **Tự động quét ổ đĩa:** Không còn ép anh em phải đặt tên phân vùng cứng ngắc như "Macintosh HD" nữa.
-* **Bẫy lỗi thông minh:** Báo lỗi cực kỳ chi tiết ở từng bước, kèm theo cơ chế tự kiểm tra.
-* **Chặn lỗi nhập liệu:** Tự động check tên đăng nhập với mật khẩu xem có hợp lệ không, đỡ bị gõ nhầm.
-* **Tránh đụng độ UID:** Tự động đi lùng các ID người dùng còn trống để không bị trùng lặp.
-* **Giao diện trực quan:** Chạy ra màu mè hoa lá cở, có thanh tiến trình và thông báo cực dễ hiểu.
-
-Mặc định các bước bên dưới sẽ dùng **bản v2 (khuyên dùng)**. Nếu lỡ xui xẻo gặp trục trặc, anh em chỉ cần đổi chữ `bypass-mdm-v2.sh` thành `bypass-mdm.sh` là quay lại dùng bản cũ được ngay.
+**Đã có bản mới cực xịn!** Có thể bypass MDM Phiên bản macOS mới nhất hiện nay là macOS 27 Golden Gate !
 
 ---
 
-## ✨ Tính năng chính
-
-* **🔍 Tự động nhận diện ổ đĩa thông minh:** Tự tìm ra phân vùng hệ thống và dữ liệu dù anh em có đặt tên kiểu gì đi nữa.
-* **✅ Kiểm tra dữ liệu đầu vào:** Chặn đứng các lỗi gõ sai tên tài khoản hoặc mật khẩu ngớ ngẩn.
-* **🛡️ Xử lý lỗi từ A-Z:** Có hướng dẫn cụ thể nếu không may phát sinh sự cố.
-* **🎯 Xử lý xung đột UID:** Tự động bốc một ID sạch sẽ để tránh đụng độ hệ thống.
-* **📊 Chạy theo thời gian thực:** Nhìn dòng trạng thái đổi màu là biết máy đang làm gì đến đâu.
-* **🔄 Chống trùng lặp:** Quét trước xem có dữ liệu thừa thãi nào không để tránh tạo trùng.
-
-## ⚠️ Lưu ý trước khi chiến
+## ⚠️ Lưu ý trước khi bypass
 
 * **Khuyến nghị tuyệt đối nên format (xóa sạch) ổ cứng** trước khi bắt đầu.
 * **Nên cài lại macOS thông qua USB cài đặt ngoài** cho mượt.
-* **Nên để ngôn ngữ máy lúc cài là tiếng Anh** (bản v2 không bắt buộc nhưng cứ để cho lành).
+* **Nên để tiếng anh cho dễ làm và đỡ lỗi**
 
 ## 📋 Hướng dẫn cài đặt & Sử dụng chi tiết
 
 Làm theo đúng các bước sau để bẻ khóa MDM trong lúc cài mới lại macOS:
 
-> **Điểm xuất phát:** Máy đang hiện cái màn hình bắt đăng nhập MDM (Remote Management) lúc thiết lập máy.
+> **Chuẩn Bị:** Máy đang hiện cái màn hình bắt đăng nhập MDM (Remote Management) lúc thiết lập máy. Hoặc khi anh em muốn bán máy thì phải Restore lại mới bán đúng không, thì sau khi active xong nó sẽ hiện màn hình Hello chào mừng. Vô bước 1
 
-**1.** **Tắt nguồn ép buộc (Force Shutdown):** Nhấn và giữ liệt nút nguồn cho đến khi máy sập hẳn.
+**1.** **Tắt nguồn ép buộc (Force Shutdown):** Nhấn và giữ liệt nút nguồn ( Touch Id) cho đến khi máy sập hẳn.
 
 **2.** **Vào chế độ Recovery (Recovery Mode):**
 
-* **Mac dùng chip Apple Silicon (M1/M2/M3...):** Nhấn giữ nút nguồn tới khi hiện dòng chữ "Loading startup options".
+* **Mac dùng chip Apple Silicon (M1/M2/M3...):** Nhấn giữ nút nguồn( Touch Id) tới khi hiện dòng chữ "Loading startup options".
 * **Mac dùng chip Intel:** Nhấn và giữ đồng thời tổ hợp phím CMD + R lúc vừa bật máy lên.
 
 **3.** **Kết nối Wi-Fi** để máy có mạng kích hoạt.
 
-**4.** **Mở Terminal** trong chế độ Recovery:
+**4.** **Chọn Safari** trong chế độ Recovery:
+
+* Nhìn lên thanh menu phía trên, bấm vào thanh tìm kiếm web: **"** Github.com/youngjiken **"** **Enter**.
 
 * Nhìn lên thanh menu phía trên, bấm vào **Utilities**.
 * Chọn **Terminal**.
