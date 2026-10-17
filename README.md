@@ -39,7 +39,10 @@ Làm theo đúng các bước sau để bẻ khóa MDM trong lúc cài mới l�
 
 * Nhìn lên thanh menu phía trên, bấm vào thanh tìm kiếm web: **"** Github.com/youngjiken **"** **Enter**.
 * Nhấn vào Script bypass MDM để vào Soucre **Mục đích lấy cái code chạy**
+![mdm1](https://raw.githubusercontent.com/youngjiken/bypass-mdm-vn/main/mdm1.png)
+
 * Ngay phần đầu hướng dẫn có cái code ae bấm coppy cái code đó lại. Sau đó nhìn lên góc trên tay trái,Bấm **Safari**, rồi chọn **Quit Safari**
+![mdm2](https://raw.githubusercontent.com/youngjiken/bypass-mdm-vn/main/mdm2.png)
 * Tiếp tục nhìn lên thanh menu phía trên, bấm vào **Utilities**.
 * Chọn **Terminal**.
 
