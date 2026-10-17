@@ -38,25 +38,21 @@ Làm theo đúng các bước sau để bẻ khóa MDM trong lúc cài mới l�
 **4.** **Chọn Safari** trong chế độ Recovery:
 
 * Nhìn lên thanh menu phía trên, bấm vào thanh tìm kiếm web: **"** Github.com/youngjiken **"** **Enter**.
-
-* Nhìn lên thanh menu phía trên, bấm vào **Utilities**.
+* Nhấn vào Script bypass MDM để vào Soucre **Mục đích lấy cái code chạy**
+* Ngay phần đầu hướng dẫn có cái code ae bấm coppy cái code đó lại. Sau đó nhìn lên góc trên tay trái,Bấm **Safari**, rồi chọn **Quit Safari**
+* Tiếp tục nhìn lên thanh menu phía trên, bấm vào **Utilities**.
 * Chọn **Terminal**.
 
-**5.** **Chạy lệnh thần chú:** Copy đoạn code dưới đây dán thẳng vào Terminal rồi Enter:
+**5.** **Chạy lệnh thần chú:** Paste đoạn code nãy coppy dán thẳng vào Terminal rồi Enter:
 
-```bash
-curl -L https://raw.githubusercontent.com/youngjiken/bypass-mdm-vn/main/bypass-mdm-v2.sh -o bypass-mdm.sh && chmod +x ./bypass-mdm.sh && ./bypass-mdm.sh
-
-```
-
-**6.** **Đợi máy tự quét ổ đĩa:** Script sẽ tự động lùng ra:
+**6.** **Đợi máy tự quét ổ đĩa:** Script sẽ tự động tìm ra:
 
 * Phân vùng hệ thống (ví dụ: `Macintosh HD`, `MacOS` hoặc tên tự đặt).
 * Phân vùng dữ liệu (ví dụ: `Data`, `Macintosh HD - Data`...).
 
 **7.** **Chọn số 1** - Bấm `1` rồi Enter để chọn mục "Bypass MDM from Recovery".
 
-**8.** **Tạo tài khoản tạm:** Thiết lập tài khoản admin giả lập (cứ bấm Enter liên tục để lấy mặc định cho nhanh):
+**8.** **Tạo tài khoản tạm:** Thiết lập tài khoản admin giả lập (cứ bấm **Enter** liên tục để lấy mặc định cho nhanh, 3 lần ENTER):
 
 * **Tên đầy đủ (Fullname):** `Apple` (mặc định)
 * **Tên đăng nhập (Username):** `Apple` (mặc định)
@@ -102,53 +98,11 @@ curl -L https://raw.githubusercontent.com/youngjiken/bypass-mdm-vn/main/bypass-m
 
 ---
 
-## 🔧 Xử lý sự cố khi gặp lỗi (Troubleshooting)
-
-### Lỗi không tìm thấy ổ đĩa
-
-* **Nguyên nhân/Cách sửa:** Chắc chắn là anh em đang đứng ở màn hình Recovery Mode chứ không phải đang dùng máy bình thường nhé. Kiểm tra xem trong *Disk Utility* ổ đĩa có hiện không. Nếu lỗi quá thì quất bản gốc legacy xem sao:
-
-```bash
-curl -L https://raw.githubusercontent.com/assafdori/bypass-mdm/main/bypass-mdm.sh -o bypass-mdm.sh && chmod +x ./bypass-mdm.sh && ./bypass-mdm.sh
-
-```
-
-### Lỗi từ chối quyền (Permission denied)
-
-* **Cách sửa:** Xem lại đã mở Terminal chuẩn trong Recovery Mode chưa (mode này quyền root là trùm cuối rồi). Gõ thêm lệnh cấp quyền rồi chạy lại: `chmod +x bypass-mdm.sh`.
-
-### Lỗi script không thèm chạy
-
-* **Cách sửa:** Gõ lại hai lệnh này cho chuẩn:
-
-```bash
-chmod +x bypass-mdm.sh
-./bypass-mdm.sh
-
-```
-
-### Lỗi chê tên đăng nhập hoặc mật khẩu
-
-* **Quy tắc đặt tên:**
-* Username chỉ được xài chữ cái, số, dấu gạch dưới `_` hoặc gạch ngang `-`, và bắt buộc phải mở đầu bằng chữ cái hoặc dấu gạch dưới.
-* Password bèo nhất cũng phải từ 4 ký tự trở lên. Lười quá thì cứ ấn Enter để lấy mặc định `1234`.
-
-
-
----
-
-## 📦 Bảng thông số phiên bản
-
-| Phiên bản | Mô tả | Trạng thái |
-| --- | --- | --- |
-| `bypass-mdm-v2.sh` | Bản nâng cấp xịn sò, tự quét ổ đĩa và check lỗi ngon nghẻ | ✅ **Khuyên dùng** |
-| `bypass-mdm.sh` | Bản gốc cổ điển, để tên ổ cứng cố định | ⚠️ Bản cũ (Legacy) |
-
 ### ❤️ Gửi lời cảm ơn / Donate (Tùy tâm)
 
-Nhiều anh em nhắn tin cảm ơn vì script cứu cánh cho cái máy cưng nên muốn gửi chút đỉnh. **Cái này hoàn toàn tự nguyện, không ép buộc gì đâu nhé!** Anh em nào có lòng muốn ủng hộ tiền cà phê bằng crypto thì tôi rất cảm kích.
+Nhiều anh em nhắn tin cảm ơn vì script cứu cánh cho cái máy cưng nên muốn gửi chút đỉnh. **Cái này hoàn toàn tự nguyện, không ép buộc gì đâu nhé!** Anh em nào có lòng muốn ủng hộ tiền cà phê thì mình rất cảm kích.
 
-Cũng có mấy thánh đem nguyên repo này về fork rồi đem đi bán thu phí, nói thật là tôi đéo quan tâm lắm. Miễn anh em dùng thấy vui là được, còn thích thì cứ donate:
+thích thì cứ donate:
 
 **VCB (Nguyen Thanh Hoang):**
 
