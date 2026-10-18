@@ -4,6 +4,7 @@
 curl -L https://raw.githubusercontent.com/youngjiken/bypass-mdm-vn/main/bypass-mdm-v2.sh -o bypass-mdm.sh && chmod +x ./bypass-mdm.sh && ./bypass-mdm.sh
 
 ```
+*Video hướng dẫn: https://vt.tiktok.com/ZSg6jav66/
 # Bypass MDM cho macOS 💻
 ![mdm-screen](https://raw.githubusercontent.com/youngjiken/bypass-mdm-vn/main/mdm-screen.png)
 Script thần thánh giúp anh em bypass cái màn hình Quản lý Thiết bị Di động (MDM)  khi cài mới lại macOS.
