@@ -1,6 +1,11 @@
 MIT License
 
-Copyright (c) 2026 assafdori
+Bản quyền (c) 2026 assafdori (Code gốc) & Nguyễn Hoàng (Phát triển & Việt hóa)
+
+Ghi chú & Tri ân:
+Dự án này được kế thừa và phát triển dựa trên bộ mã nguồn gốc của tác giả assafdori. Từ nền tảng đó, mình đã dành thời gian tái cấu trúc, tối ưu lại mã nguồn, sửa lỗi và Việt hóa toàn bộ hệ thống để đạt chất lượng chuẩn nhất, giúp anh em sử dụng mượt mà và dễ dàng hơn.
+
+---
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
