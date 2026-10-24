@@ -9,9 +9,9 @@ curl -L https://raw.githubusercontent.com/youngjiken/bypass-mdm-vn/main/bypass-m
 ![mdm-screen](https://raw.githubusercontent.com/youngjiken/bypass-mdm-vn/main/mdm-screen.png)
 Script thần thánh giúp anh em bypass cái màn hình Quản lý Thiết bị Di động (MDM)  khi cài mới lại macOS.
 
-## 🚨 Cập nhật: Ngày 16 tháng 10 năm 2026
+## 🚨 Cập nhật: Ngày 15 tháng 09 năm 2026
 
-**Đã có bản mới cực xịn!** Có thể bypass MDM Phiên bản macOS mới nhất hiện nay là macOS 27 Golden Gate !
+**Đã có bản mới cực xịn!** Có thể bypass MDM Phiên bản macOS mới nhất hiện nay là macOS 27 Golden Gate, Nói chung bất kì bản nào cũng bypass mdm đơn giản, dùng cả đời nhé
 
 ---
 
