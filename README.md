@@ -19,6 +19,7 @@ Script thần thánh giúp anh em bypass cái màn hình Quản lý Thiết bị
 
 * **Khuyến nghị tuyệt đối nên format (xóa sạch) ổ cứng** trước khi bắt đầu.
 * **Nên cài lại macOS thông qua USB cài đặt ngoài** cho mượt.
+* **Đối với các máy đời sau này như M1 M2 M3 M4 M5...vv** Restore cài đặt gốc là ok nhanh gọn.
 * **Nên để tiếng anh cho dễ làm và đỡ lỗi**
 
 ## 📋 Hướng dẫn cài đặt & Sử dụng chi tiết
